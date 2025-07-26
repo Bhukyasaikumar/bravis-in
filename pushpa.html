@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pushpa 2 - Watch Now</title>
+  <link rel="stylesheet" href="movie.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <div class="logo">bravis<span>.in</span></div>
+  <ul class="nav-links">
+    <li><a href="movies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+    <h1 class="movie-title">🌲 Pushpa 2</h1>
+     <div class="title-section d-flex justify-content-center flex-wrap">
+       <img src="images/pushpa.jpg" alt="Kushi Movie" class="centered-poster"/>
+      <p class="movie-language"> Telugu</p>
+    <p class="movie-description">
+      <em>*Pushpa: The Rise*</em> is an action-packed thriller starring Allu Arjun. Set in the red sandalwood smuggling network of 
+      Andhra Pradesh, it follows the rise of Pushpa Raj from a low-wage laborer to a powerful smuggler. Known for its iconic 
+      dialogues, rugged visuals, and powerful performances, Pushpa is a gritty cinematic experience.
+    </p>
+<div class="movie-video" style="text-align: center;">
+  <iframe 
+    src="https://drive.google.com/file/d/18HJnpCILMuOKwmgalOJxQ5aoQSmASnV-/preview"
+    width="720" 
+    height="405"
+    allow="autoplay"
+    allowfullscreen
+    style="border: none;">
+  </iframe>
+</div>
+
+    <button class="fullscreen-btn" onclick="openFullscreen()">▶️ Watch in Fullscreen</button>
+  </div>
+
+  <script>
+    var elem = document.getElementById("pushpaVideo");
+
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+      elem.play(); // play video after entering fullscreen
+    }
+  </script>
+</body>
+</html>

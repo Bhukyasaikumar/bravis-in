@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bravis Movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">bravis<span>.in</span></div>
+  <ul class="nav-links">
+    <li><a href="movies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+  <!--  Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search movie name..." />
+    <button onclick="searchMovie()">Search</button>
+  </div>
+
+  <section class="movie-gallery">
+    <!-- Peta Movie -->
+    <div class="movie-card">
+      <img src="http://onlookersmedia.in/wp-content/uploads/2019/01/superstar-rajinikanth-starrer-petta-review-report-hit-or-flop-3.jpg" alt="Peta Movie" />
+      <h2>Peta</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="peta.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+
+    <!-- RRR Movie -->
+    <div class="movie-card">
+      <img src="images/rrr.jpg" alt="RRR Movie" />
+      <h2>RRR</h2>
+      <p class="movie-language">Telugu</p>
+      <a href="rrr.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+
+    <!-- Kushi Movie -->
+    <div class="movie-card">
+      <img src="images/kushi.jpg" alt="Kushi Movie" />
+      <h2>Kushi</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="kushi.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+
+    <!-- Jailer Movie -->
+    <div class="movie-card">
+      <img src="images/jailer.jpg" alt="Jailer Movie" />
+      <h2>Jailer</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="jailer.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+    <div class="movie-card">
+      <img src="images/pushpa.jpg" alt="Jailer Movie" />
+      <h2>pushpa</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="pushpa.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+    <div class="movie-card">
+      <img src="images/jailer.jpg" alt="Jailer Movie" />
+      <h2>Jailer</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="jailer.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+    <div class="movie-card">
+      <img src="images/kushi.jpg" alt="Kushi Movie" />
+      <h2>Kushi</h2>
+      <p class="movie-language"> Telugu</p>
+      <a href="kushi.html" class="watch-btn">▶ Watch Now</a>
+    </div>
+  </section>
+  <script>
+    function searchMovie() {
+      const input = document.getElementById("searchInput").value.toLowerCase().trim();
+      const moviePages = {
+        "peta": "peta.html",
+        "rrr": "rrr.html",
+        "kushi": "kushi.html",
+        "jailer": "jailer.html",
+        "pushpa": "pushpa.html"
+      };
+
+      if (moviePages[input]) {
+        window.location.href = moviePages[input];
+      } else {
+        alert("Movie not found! Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>

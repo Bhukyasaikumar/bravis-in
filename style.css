@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  color: #fff;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+}
+
+.welcome-card h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #ffcc00;
+}
+
+.welcome-card h1 span {
+  color: #fff;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+
+.enter-button {
+  display: inline-block;
+  padding: 12px;
+  background: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.enter-button:hover {
+  background: #e6b800;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #ffcc00;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffeb3b; /* Yellow like bappamtv.in */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo span {
+  color: #fff;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffeb3b;
+}
+
+
+.search-bar {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #222;
+    }
+
+/* Movie Gallery: 6 Cards Per Row Layout */
+.movie-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 cards per row */
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+/* Responsive Fallbacks */
+@media (max-width: 1200px) {
+  .movie-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .movie-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card Style */
+.movie-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 200px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card h2 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Watch Now Button */
+.watch-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.watch-btn:hover {
+  background-color: #b20710;
+  transform: scale(1.05);
+}
+
+.watch-btn:active {
+  transform: scale(0.95);
+}
+
+/* Language Label */
+.movie-language {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.about-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      color: #fff;
+    }
+
+    .about-container h2 {
+      color: #ffcc00;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-container p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .about-team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-member {
+      background-color: #2b2b2b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .team-member h4 {
+      color: #ffcc00;
+      margin-top: 10px;
+    }
+
+    .team-member p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }

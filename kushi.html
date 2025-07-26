@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<nav class="navbar">
+  <div class="logo">bravis<span>.in</span></div>
+  <ul class="nav-links">
+    <li><a href="movies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kushi - Watch Now</title>
+  <link rel="stylesheet" href="movie.css" />
+</head>
+<body> 
+    <h1 class="movie-title">💖 Kushi</h1>
+     <div class="title-section d-flex justify-content-center flex-wrap">
+       <img src="images/kushi.jpg" alt="Kushi Movie" class="centered-poster"/>
+      <p class="movie-language"> Telugu</p>
+    <p class="movie-description">
+      <em>*Kushi*</em> is a romantic drama starring Vijay Deverakonda and Samantha Ruth Prabhu. Set against the backdrop of Kashmir
+      and Hyderabad, it explores the story of a couple from contrasting backgrounds who fall in love and face the challenges of
+      sustaining a relationship amid cultural and ideological differences.
+    </p>
+<div class="movie-video" style="text-align: center;">
+  <iframe 
+    src="https://drive.google.com/file/d/15QLCHUSJpdwwYtGNwzIhLI-jthMs7H9n/preview"
+    width="720" 
+    height="405"
+    allow="autoplay"
+    allowfullscreen
+    style="border: none;">
+  </iframe>
+</div>
+
+    <button class="fullscreen-btn" onclick="openFullscreen()">▶️ Watch in Fullscreen</button>
+  </div>
+
+  <script>
+    var elem = document.getElementById("kushiVideo");
+
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+      elem.play();
+    }
+  </script>
+</body>
+</html>

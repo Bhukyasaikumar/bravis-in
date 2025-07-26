@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RRR - Watch Now</title>
+  <link rel="stylesheet" href="movie.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">bravis<span>.in</span></div>
+  <ul class="nav-links">
+    <li><a href="movies.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+
+    <h1 class="movie-title">🔥 RRR</h1>
+     <div class="title-section d-flex justify-content-center flex-wrap">
+       <img src="images/RRR.jpg" alt="Kushi Movie" class="centered-poster"/>
+      <p class="movie-language"> Telugu</p>
+    <p class="movie-description">
+      <em>*RRR*</em> is an epic action drama directed by S. S. Rajamouli. Set in 1920s colonial India, it tells the fictional story of two
+      revolutionaries—Alluri Sitarama Raju and Komaram Bheem—who fight against the British Raj. Grand visuals, emotional depth,
+      and breathtaking action make RRR a landmark in Indian cinema.
+    </p>
+<div class="movie-video">
+<iframe 
+    src="https://drive.google.com/file/d/1QBqYPwv6CJGg9OFkvHsFEEwPUebxTxOo/preview"
+    width="720" 
+    height="405"
+    allow="autoplay"
+    allowfullscreen
+    style="border: none;">
+  </iframe>
+</div>
+    <button class="fullscreen-btn" onclick="openFullscreen()">▶️ Watch in Fullscreen</button>
+  </div>
+
+  <script>
+    var elem = document.getElementById("rrrVideo");
+
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+      elem.play(); // play video after entering fullscreen
+    }
+  </script>
+</body>
+</html>
