@@ -23,31 +23,14 @@
       <em>*Jailer*</em> is an action-packed Tamil thriller starring Superstar Rajinikanth. The movie follows a retired police officer who is drawn back into action to protect his family and uphold justice in the face of dangerous criminals.
     </p>
 
-    <div class="movie-video" style="text-align: center;">
+    <div class="movie-video">
   <iframe src="https://drive.google.com/file/d/131Q92HODCKZFJawfsjT9_Qy0iWqTjhc2/preview"
-          width="720" height="405"
+          width="100%" height="450"
           allow="autoplay"
           allowfullscreen
-          style="border: none;">
+          loading="lazy">
   </iframe>
 </div>
-
-    <button class="fullscreen-btn" onclick="openFullscreen()">▶️ Watch in Fullscreen</button>
-  </div>
-
-  <script>
-    var elem = document.getElementById("jailerVideo");
-
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen();
-      }
-      elem.play(); // play video after entering fullscreen
-    }
-  </script>
 </body>
 </html>
+
