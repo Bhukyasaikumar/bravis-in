@@ -16,7 +16,7 @@
 </nav>
 
     <h1 class="movie-title">🎬 Peta</h1>
-     <div class="title-section d-flex justify-content-center flex-wrap">
+     <div class="title-section">
        <img src="images/peta.jpg" alt="Kushi Movie" class="centered-poster"/>
       <p class="movie-language"> Telugu</p>
     <p class="movie-description">
@@ -24,30 +24,11 @@
       mystery of a warden with a violent past who protects his students from danger. Filled with mass moments, punch dialogues,
       and an emotional backstory, Peta is a celebration of Rajini-style entertainment.
     </p>
-<div class="movie-video" style="text-align: center;">
+<div class="movie-video">
   <iframe src="https://drive.google.com/file/d/1BWodeTnrl8GFPRx22dUB2UB51BdtEYME/preview"
-          width="720" height="405"
+          width="100%" height="450"
           allow="autoplay"
           allowfullscreen
-          style="border: none;">
-  </iframe>
-</div>
-    <button class="fullscreen-btn" onclick="openFullscreen()">▶️ Watch in Fullscreen</button>
-  </div>
-
-  <script>
-  var elem = document.getElementById("petaVideo");
-
-  function openFullscreen() {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) {
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) {
-      elem.msRequestFullscreen();
-    }
-    elem.play(); // play video after going fullscreen
-  }
-</script>
+          loading="lazy"></iframe>
 </body>
 </html>
